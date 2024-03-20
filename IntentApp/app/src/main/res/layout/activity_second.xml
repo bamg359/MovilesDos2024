@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#BABDBF"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/txt_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="23dp"
+        android:text="Registro"
+        android:textColor="#732B1A"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/input_nombre"
+        app:layout_constraintEnd_toEndOf="@+id/input_nombre" />
+
+    <EditText
+        android:id="@+id/input_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="211dp"
+        android:layout_marginBottom="212dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre"
+        android:backgroundTint="#732B1A"
+        android:inputType="text"
+        android:singleLine="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/input_password"
+        app:layout_constraintEnd_toEndOf="@+id/input_password"
+        app:layout_constraintStart_toStartOf="@+id/input_password"
+        app:layout_constraintTop_toTopOf="@+id/btn_volver"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/input_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Ingrese su apellido"
+        android:backgroundTint="#732B1A"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/input_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/input_nombre" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="206dp"
+        android:ems="10"
+        android:hint="Cree una contraseña"
+        android:backgroundTint="#732B1A"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Ingrese su correo"
+        android:backgroundTint="#732B1A"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/input_apellido"
+        app:layout_constraintTop_toBottomOf="@+id/input_apellido" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Ingrese su teléfono"
+        android:backgroundTint="#732B1A"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/input_password"
+        app:layout_constraintStart_toStartOf="@+id/input_password" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="#3F7373"
+        android:text="Registrar"
+        app:layout_constraintStart_toStartOf="@+id/input_password"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#3F7373"
+        android:text="Volver"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
